@@ -10,29 +10,33 @@ session_start();
 
 // 3. require_once
 //require_once 'vendor/autoload.php';
-
+require_once 'vendor/ autoload.php ';
 require_once 'Controllers/HomeController.php';
 require_once 'Controllers/RegisterController.php';
 require_once 'Controllers/LoginController.php';
 require_once 'Controllers/AdminController.php';
 require_once 'Controllers/LogoutController.php';
+require_once 'Controllers/GuestbookController.php';
+
+// Define the base URL
+define('BASE_URL', '/guestbook');
 
 // TODO 2: ROUTING
 
 switch ($_SERVER['REQUEST_URI']) {
-    case '/':
-        $controllerClassName = 'HomeController';
+    case BASE_URL:
+        $controllerClassName = 'GuestbookController';
         break;
-    case '/register':
+    case BASE_URL . '/register':
         $controllerClassName = 'RegisterController';
         break;
-    case '/login':
+    case BASE_URL . '/login':
         $controllerClassName = 'LoginController';
         break;
-    case '/logout':
+    case BASE_URL . '/logout':
         $controllerClassName = 'LogoutController';
         break;
-    case '/admin':
+    case BASE_URL . '/admin':
         $controllerClassName = 'AdminController';
         break;
     default:

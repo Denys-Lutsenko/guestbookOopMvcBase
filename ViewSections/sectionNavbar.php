@@ -4,9 +4,9 @@
 
         <!-- logo and link to home page   -->
         <a class="navbar-brand" href="/">
-            <span style="color: Dodgerblue;">
-                <i class="fa-brands fa-php fa-2xl"></i>
-            </span>
+      <span style="color: Dodgerblue;">
+        <i class="fa-brands fa-php fa-2xl"></i>
+      </span>
         </a>
 
         <!-- navbar small button collapse menu -->
@@ -23,9 +23,8 @@
                     </li>
                 <?php } else { ?>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../guestbook.php">GuestBook</a>
+                        <a class="nav-link active" aria-current="page" href="/guestbook">GuestBook</a>
                     </li>
-
                 <?php } ?>
             </ul>
 

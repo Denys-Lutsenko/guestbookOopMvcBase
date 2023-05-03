@@ -1,0 +1,17 @@
+{
+    "name": "jj/guestbook-oop-mvc-base",
+    "autoload": {
+        "psr-4": {
+            "Jj\\GuestbookOopMvcBase\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Denys-Lutsenko",
+            "email": "d.r.lutsenko@student.khai.edu"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^6.2"
+    }
+}
